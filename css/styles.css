@@ -113,11 +113,89 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .about-container {
-  max-width: 100%;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   flex-direction: column;
+}
+.about-container .row1 {
+  padding-top: 213px;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+}
+.about-container .row1 .img {
+  margin-left: 20px;
+  height: 587px;
+  width: 393px;
+  background-image: url(../img/about-photo.jpg);
+  background-size: cover;
+}
+.about-container .row1 .content {
+  position: relative;
+  width: 1134px;
+  margin-left: 40px;
+}
+.about-container .row1 .content .title {
+  position: relative;
+  text-align: center;
+  font-family: "Segoe-UI";
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.about-container .row1 .content .subtitle {
+  position: relative;
+  text-align: center;
+  font-family: "Segoe-UI";
+  font-size: 26px;
+  font-weight: bold;
+  margin-top: 40px;
+}
+.about-container .row1 .content p {
+  margin-top: 61px;
+  font-family: "Segoe-UI";
+  font-size: 16px;
+}
+.about-container .row2 {
+  padding-top: 213px;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+}
+.about-container .row2 .img {
+  margin-left: 20px;
+  height: 587px;
+  width: 393px;
+  background-image: url(../img/about-photo-two.jpg);
+  background-size: cover;
+}
+.about-container .row2 .content {
+  position: relative;
+  width: 1134px;
+  margin-left: 40px;
+}
+.about-container .row2 .content .title {
+  position: relative;
+  text-align: center;
+  font-family: "Segoe-UI";
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.about-container .row2 .content .subtitle {
+  position: relative;
+  text-align: center;
+  font-family: "Segoe-UI";
+  font-size: 26px;
+  font-weight: bold;
+  margin-top: 40px;
+}
+.about-container .row2 .content p {
+  margin-top: 61px;
+  font-family: "Segoe-UI";
+  font-size: 16px;
 }
 
 /*# sourceMappingURL=styles.css.map */

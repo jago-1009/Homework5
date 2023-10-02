@@ -10,7 +10,7 @@ function initListeners() {
      $('#app').html(data);
     });
     } else {
-    $.get(`pages/about/about.html`, function (data) {
+    $.get(`pages/home/home.html`, function (data) {
     console.log('data ' + data);
      $('#app').html(data);
     });
