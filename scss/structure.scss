@@ -21,3 +21,103 @@ $iphone-width:390px;
     font-family: 'Segoe-UI' ;
     src: url(../img/fonts/segoeui.ttf);
 }
+
+
+// Putting the footer here for simplicity
+footer {
+    max-width: $site-width;
+    margin: 100px auto 0 auto;
+    background-color: $site-gray;
+    padding: 0 100px;
+    height: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .copy {
+        color: $site-white;
+        margin-bottom: 0;
+    }
+
+    .footerLinks {
+        width: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        a {
+            text-decoration: none;
+            color: $site-white;
+        }
+    }
+
+    .socials {
+        width: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        a {
+            img {
+                width: 45px;
+                height: 45px;
+            }
+        }
+    }
+}
+
+@media (max-width: $ipad-width) {
+    footer {
+        padding: 0 20px;
+        margin: 60px auto 0 auto;
+
+        .copy {
+            font-size: 11px;
+        }
+
+        .footerLinks {
+            width: 200px;
+            a {
+                font-size: 11px;
+            }
+        }
+
+        .socials {
+            width: 100px;
+
+            a {
+                img {
+                    width: 22px;
+                    height: 22px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $iphone-width) {
+    footer {
+        height: 60px;
+        .copy {
+            font-size: 8px;
+        }
+
+        .footerLinks {
+            width: 100px;
+            a {
+                font-size: 8px;
+            }
+        }
+
+        .socials {
+            width: 60px;
+
+            a {
+                img {
+                    width: 14px;
+                    height: 14px;
+                }
+            }
+        }
+    }
+}

@@ -1,4 +1,12 @@
 function initListeners() {
+    // Hamburger Menu Listener
+    $(".hamburger").on("click", (e) => {
+        console.log("clicked");
+        $(".links").toggleClass("mobileLinks");
+        $(".links").toggleClass("hide");
+    })
+
+
     function changeRoute() {
     let hashTag = window.location.hash;
      let pageID = hashTag.replace('#', '');
@@ -6,12 +14,10 @@ function initListeners() {
     
     if (pageID != '') {
     $.get(`pages/pageID/pageID.html`, function (data) {
-     console.log('data ' + data);
      $('#app').html(data);
     });
     } else {
     $.get(`pages/home/home.html`, function (data) {
-    console.log('data ' + data);
      $('#app').html(data);
     });
     }
