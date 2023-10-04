@@ -16,6 +16,85 @@ h1, h2, h3, h4, h5, h6, p {
   font-family: "Segoe-UI";
   src: url(../img/fonts/segoeui.ttf);
 }
+nav {
+  max-width: 1920px;
+  height: 108px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Segoe-UI";
+}
+nav .logo {
+  display: flex;
+  align-items: center;
+}
+nav .logo a img {
+  width: 73px;
+  height: 73px;
+}
+nav .logo p {
+  margin-left: 20px;
+  text-align: center;
+  font-size: 16px;
+  display: inline;
+  margin-bottom: 0;
+}
+nav .search {
+  width: 600px;
+  height: 44px;
+  background-color: #587C83;
+  opacity: 0.35;
+  display: flex;
+  align-items: center;
+}
+nav .search img {
+  width: 25px;
+  height: 25px;
+}
+nav .search input {
+  width: calc(100% - 25px);
+  height: 100%;
+  background-color: #587C83;
+  border: none;
+  font-size: 14px;
+  display: inline;
+  color: white;
+}
+nav .links {
+  width: 620px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .links a {
+  display: flex;
+  align-items: center;
+  height: 100;
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+}
+nav .links a p {
+  display: inline;
+  text-align: center;
+  margin-right: 10px;
+  margin-bottom: 0;
+}
+nav .links a img {
+  width: 50px;
+  height: 50px;
+}
+nav .hamburger {
+  height: 20px;
+  display: none;
+}
+nav .hamburger .bar {
+  width: 30px;
+  height: 3px;
+  background-color: #000000;
+}
+
 .hero {
   min-height: 530px;
   width: 100%;
