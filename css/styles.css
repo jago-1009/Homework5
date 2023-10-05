@@ -320,6 +320,12 @@ nav .hamburger .bar {
 }
 
 @media (max-width: 768px) {
+  .hero-text h2 {
+    font-size: 16px !important;
+  }
+  .hero-text p {
+    font-size: 8px !important;
+  }
   .hero-img {
     width: 522px !important;
     height: 329px !important;
@@ -335,6 +341,19 @@ nav .hamburger .bar {
   }
   .books {
     flex-direction: column;
+  }
+}
+@media (max-width: 390px) {
+  .hero .hero-text {
+    width: 1000px !important;
+  }
+  .hero .hero-img {
+    width: 316px !important;
+    height: 193px !important;
+  }
+  .hero .hero-img-ipad {
+    width: 900px;
+    height: 70px;
   }
 }
 .about-container {

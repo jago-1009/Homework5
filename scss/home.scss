@@ -112,6 +112,14 @@
 
 
 @media (max-width:768px) {
+    .hero-text {
+        h2 {
+            font-size: 16px !important;
+        }
+        p {
+            font-size: 8px !important;
+        }
+    }
     .hero-img {
         width:522px !important;
         height:329px !important;
@@ -129,7 +137,7 @@
         flex-direction: column;
         .book {
             .book-desc {
-                
+
             }
         }
     }
@@ -138,3 +146,18 @@
 
 
 
+@media (max-width:390px) {
+    .hero{
+        .hero-text {
+            width:1000px !important;
+        }
+        .hero-img {
+            width:316px !important;
+            height:193px !important;
+        }
+        .hero-img-ipad {
+            width: 900px;
+            height:70px;
+        }
+    }
+}
