@@ -228,20 +228,24 @@ nav .hamburger .bar {
   padding: 158px;
 }
 .hero .hero-img {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
   width: 1500px;
   height: 530px;
   background-image: linear-gradient(rgba(88, 124, 131, 0.5), rgba(88, 124, 131, 0.5)), url("../img/home-hero.jpg");
   background-size: cover;
   background-position: 0% 40%;
 }
+.hero .hero-img-ipad {
+  width: 273px;
+  height: 181px;
+}
 .hero .hero-text {
   width: 265px;
   color: #FFFFFF;
   font-weight: bold;
   font-family: "Segoe-UI";
-  position: relative;
-  left: 75%;
-  top: 30%;
 }
 .hero .hero-text h2 {
   text-transform: uppercase;
@@ -315,6 +319,24 @@ nav .hamburger .bar {
   padding-top: 50px;
 }
 
+@media (max-width: 768px) {
+  .hero-img {
+    width: 522px !important;
+    height: 329px !important;
+    background-image: none !important;
+    background-color: #587C83;
+  }
+  .hero-img-ipad {
+    background-image: url(../img/home-hero.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 56px;
+    margin-left: 81px;
+  }
+  .books {
+    flex-direction: column;
+  }
+}
 .about-container {
   width: 100%;
   display: flex;
