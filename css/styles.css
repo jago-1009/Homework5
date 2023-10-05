@@ -386,7 +386,7 @@ nav .hamburger .bar {
 }
 .about-container .row1 {
   padding-top: 213px;
-  width: 80%;
+  width: 100%;
   display: flex;
   flex-direction: row;
 }
@@ -425,7 +425,7 @@ nav .hamburger .bar {
 }
 .about-container .row2 {
   padding-top: 213px;
-  width: 80%;
+  width: 100%;
   display: flex;
   flex-direction: row;
 }
@@ -463,6 +463,43 @@ nav .hamburger .bar {
   font-size: 16px;
 }
 
+@media (max-width: 768px) {
+  .title {
+    font-size: 12px !important;
+  }
+  .subtitle {
+    font-size: 8px !important;
+  }
+  .img {
+    width: 530px !important;
+    height: 343px !important;
+  }
+  p {
+    width: 355px;
+    text-align: center;
+    font-size: 11px !important;
+    margin-left: 50px;
+    font-weight: bold;
+  }
+}
+@media (max-width: 390px) {
+  .title {
+    font-size: 6px !important;
+  }
+  .subtitle {
+    font-size: 6px !important;
+  }
+  .img {
+    width: 73px !important;
+    height: 132px !important;
+  }
+  p {
+    width: 200px;
+    text-align: center;
+    font-size: 6px !important;
+    font-weight: bold;
+  }
+}
 .books-container {
   width: 100%;
   display: flex;
