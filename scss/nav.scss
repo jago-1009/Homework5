@@ -98,6 +98,8 @@ nav {
     flex-direction: column;
     align-items: center;
     background-color: $site-gray;
+    z-index: 90;
+    border: 2px solid black;
 }
 
 
@@ -105,8 +107,11 @@ nav {
 
 @media (max-width: 768px) {
     nav {
+        .logo {
+            width: 30%;
+        }
         .search {
-            width: 300px;
+            width: 40%;
             height: 25px;
     
             img {
@@ -131,6 +136,14 @@ nav {
                 text-align: center;
                 margin: 0 auto;
                 border-bottom: 2px solid $site-black;
+                height: calc(100% / 6);
+
+                display: flex;
+                justify-content: center;
+
+                p {
+                    display: none;
+                }
             }
         }
 
@@ -148,4 +161,41 @@ nav {
     }
 
 
+}
+
+@media (max-width: $iphone-width) {
+    nav {
+        .logo {
+            img {
+                width: 20px;
+                height: 20px;
+            }
+        }
+        .search {
+            width: 140px;
+            height: 16px;
+
+            img {
+                width: 16px;
+                height: 16px;
+            }
+            input {
+                width: calc(100% - 16px);
+            }
+        }
+        .links {
+            width: 100vw;
+            height: 100vh;
+
+            a {
+                font-size: 22px;
+            }
+        }
+        
+        .hamburger {
+            .bar {
+                width: 40px;
+            }
+        }
+    }
 }
