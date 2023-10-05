@@ -80,7 +80,6 @@ h1 {
     height:660px;
 }
 .black-history {
-    margin-bottom:60%;
     h1 {
             margin-bottom: 400px;
         }
@@ -232,6 +231,7 @@ h1 {
 }
 
 @media (max-width:768px) {
+    .books-container{
     h1 {
         margin-top:310px !important;
         position: relative;
@@ -296,7 +296,9 @@ h1 {
         flex-direction: column;
     }
 }
+}
 @media (max-width:390px) {
+    .books-container{
     .book-img {
         width:150px !important;
         height:260px !important;
@@ -335,7 +337,7 @@ h1 {
 
     .black-history {
         
-        margin-bottom: 800px !important;
+        margin-bottom: 600px !important;
 
         .book1 {
             margin-left:100px;
@@ -396,4 +398,5 @@ h1 {
 
         flex-direction: column;
     }
+}
 }

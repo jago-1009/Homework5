@@ -1,3 +1,13 @@
+
+
+
+
+
+
+
+
+
+
 function initListeners() {
     // Hamburger Menu Listener
     $(".hamburger").on("click", (e) => {

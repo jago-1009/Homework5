@@ -1,7 +1,18 @@
 .account-container {
+    .login-button {
+        width:170px;
+        height:45px;
+        font-family: 'Segoe-UI';
+        font-size:16px;
+        background-color: $site-gray;
+        border:none;
+        color:$site-white;
+    }
+    margin-top:160px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    flex-direction: row;
     .login {
         display: flex;
         align-items: center;
@@ -14,6 +25,7 @@
         align-self: first baseline;
         font-weight: normal;
         font-family: 'Segoe-UI';
+        font-size:26px;
     }
     p {
         font-weight: normal;
@@ -35,5 +47,24 @@
         align-items: center;
         justify-content: space-evenly;
         flex-direction: column;
+    }
+}
+@media (max-width:768px) {
+    .account-container {
+    
+        flex-direction: column;
+        h1 {
+            font-size:12px;
+        }
+    }
+}
+
+
+@media (max-width:390px) {
+    .account-container {
+    
+        h1 {
+            font-size: 6px;
+        }
     }
 }
