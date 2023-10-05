@@ -181,11 +181,16 @@ nav .hamburger .bar {
   flex-direction: column;
   align-items: center;
   background-color: #587C83;
+  z-index: 90;
+  border: 2px solid black;
 }
 
 @media (max-width: 768px) {
+  nav .logo {
+    width: 30%;
+  }
   nav .search {
-    width: 300px;
+    width: 40%;
     height: 25px;
   }
   nav .search img {
@@ -207,6 +212,12 @@ nav .hamburger .bar {
     text-align: center;
     margin: 0 auto;
     border-bottom: 2px solid #000000;
+    height: 16.6666666667%;
+    display: flex;
+    justify-content: center;
+  }
+  nav .links a p {
+    display: none;
   }
   nav .hide {
     display: none;
@@ -217,6 +228,33 @@ nav .hamburger .bar {
     align-items: center;
     justify-content: space-between;
     cursor: pointer;
+  }
+}
+@media (max-width: 390px) {
+  nav .logo img {
+    width: 20px;
+    height: 20px;
+  }
+  nav .search {
+    width: 140px;
+    height: 16px;
+  }
+  nav .search img {
+    width: 16px;
+    height: 16px;
+  }
+  nav .search input {
+    width: calc(100% - 16px);
+  }
+  nav .links {
+    width: 100vw;
+    height: 100vh;
+  }
+  nav .links a {
+    font-size: 22px;
+  }
+  nav .hamburger .bar {
+    width: 40px;
   }
 }
 .hero {

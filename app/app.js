@@ -6,6 +6,14 @@ function initListeners() {
         $(".links").toggleClass("hide");
     })
 
+    $(window).on("resize", (e) => {
+        console.log(window.innerWidth);
+        if (window.innerWidth > 768) {
+            $(".links").removeClass("mobileLinks");
+            $(".links").addClass("hide");
+        }
+    })
+
 
     function changeRoute() {
     let hashTag = window.location.hash;
@@ -25,6 +33,10 @@ function initListeners() {
     
     function initURLListener() {
     $(window).on('hashchange', changeRoute);
+    $(window).on('hashchange', e => {
+        $(".links").removeClass("mobileLinks");
+        $(".links").addClass("hide");
+    });
     changeRoute();
     }
     
