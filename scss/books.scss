@@ -33,7 +33,7 @@ h1 {
     width:  90%;
 }
 .booksets {
-   width:90%;
+   max-width:90%;
 .book1  {
     display: flex;
     align-items: center;
@@ -80,6 +80,7 @@ h1 {
     height:660px;
 }
 .black-history {
+    margin-bottom:60%;
     h1 {
             margin-bottom: 400px;
         }
@@ -129,12 +130,9 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-   width:90%;    height: 729px;
+   max-width:90%;    height: 729px;
 }
 .horror {
-    h1 {
-        margin-bottom: 400px;
-        }
                  .book1 {
                      display: flex;
                      align-items: center;
@@ -179,7 +177,7 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-   width:90%;    height: 748px;
+   max-width:90%;    height: 748px;
 }
 .childrens {
     h1 {
@@ -229,12 +227,18 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-   width:90%;    height:646px;
+   max-width:90%;    height:646px;
 }
 }
 
 @media (max-width:768px) {
+    h1 {
+        margin-top:310px !important;
+        position: relative;
+        bottom:300px;
+    }
     .booksets {
+        margin-bottom: 400px;
         .book1 {
             margin-bottom:63.5px;
         }
@@ -247,6 +251,7 @@ h1 {
         flex-direction: column;
     }
     .black-history {
+        margin-bottom: 400px;
         .book1 {
                 margin-bottom: 63.5px;
             }
@@ -261,6 +266,7 @@ h1 {
             flex-direction: column;
         }
     .horror {
+        margin-bottom: 400px;
         .book1 {
                 margin-bottom: 63.5px;
             }
@@ -275,6 +281,7 @@ h1 {
         flex-direction: column;
     }
      .childrens {
+        margin-bottom: 400px;
         .book1 {
                 margin-bottom: 63.5px;
             }
@@ -286,6 +293,107 @@ h1 {
             .book3 {
                 margin-bottom: 63.5px;
             }
+        flex-direction: column;
+    }
+}
+@media (max-width:390px) {
+    .book-img {
+        width:150px !important;
+        height:260px !important;
+    }
+    h1 {
+        margin-top: 310px !important;
+        position: relative;
+        bottom: 700px;
+    }
+    .first {
+        bottom: 300px !important; 
+    }
+
+    .booksets {
+        margin-top:500px;
+        margin-bottom: 800px;
+
+        .book1 {
+            
+            margin-left: 100px;
+            margin-bottom: 300px;
+        }
+
+        .book2 {
+            margin-left: 100px;
+            margin-bottom: 300px;
+        }
+
+        .book3 {
+            margin-left: 100px;
+            margin-bottom: 300px;
+        }
+
+        flex-direction: column;
+    }
+
+    .black-history {
+        
+        margin-bottom: 800px !important;
+
+        .book1 {
+            margin-left:100px;
+            margin-bottom: 300px;
+        }
+
+        .book2 {
+            margin-left:100px;
+            margin-bottom: 300px;
+        }
+
+        .book3 {
+             margin-left: 100px;
+            margin-bottom: 300px;
+        }
+
+        flex-direction: column;
+    }
+
+    .horror {
+        margin-bottom: 800px;
+
+        .book1 {
+            margin-left: 100px;
+            margin-bottom: 300px;
+        }
+
+        .book2 { 
+            margin-left: 100px;
+            margin-bottom: 300px;
+        }
+
+        .book3 {
+            margin-left: 100px;
+            margin-bottom: 300px;
+        }
+
+        flex-direction: column;
+    }
+
+    .childrens {
+        margin-bottom: 800px;
+
+        .book1 {
+            margin-left: 100px;
+            margin-bottom: 300px;
+        }
+
+        .book2 {
+            margin-left: 100px;
+            margin-bottom: 300px;
+        }
+
+        .book3 {
+            margin-left: 100px;
+            margin-bottom: 300px;
+        }
+
         flex-direction: column;
     }
 }

@@ -435,7 +435,7 @@ nav .hamburger .bar {
   width: 90%;
 }
 .books-container .booksets {
-  width: 90%;
+  max-width: 90%;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -478,10 +478,11 @@ nav .hamburger .bar {
   background-repeat: no-repeat;
 }
 .books-container .black-history {
+  margin-bottom: 60%;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  width: 90%;
+  max-width: 90%;
   height: 729px;
 }
 .books-container .black-history h1 {
@@ -527,11 +528,8 @@ nav .hamburger .bar {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  width: 90%;
+  max-width: 90%;
   height: 748px;
-}
-.books-container .horror h1 {
-  margin-bottom: 400px;
 }
 .books-container .horror .book1 {
   display: flex;
@@ -573,7 +571,7 @@ nav .hamburger .bar {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  width: 90%;
+  max-width: 90%;
   height: 646px;
 }
 .books-container .childrens h1 {
@@ -617,7 +615,13 @@ nav .hamburger .bar {
 }
 
 @media (max-width: 768px) {
+  h1 {
+    margin-top: 310px !important;
+    position: relative;
+    bottom: 300px;
+  }
   .booksets {
+    margin-bottom: 400px;
     flex-direction: column;
   }
   .booksets .book1 {
@@ -630,6 +634,7 @@ nav .hamburger .bar {
     margin-bottom: 63.5px;
   }
   .black-history {
+    margin-bottom: 400px;
     flex-direction: column;
   }
   .black-history .book1 {
@@ -642,6 +647,7 @@ nav .hamburger .bar {
     margin-bottom: 63.5px;
   }
   .horror {
+    margin-bottom: 400px;
     flex-direction: column;
   }
   .horror .book1 {
@@ -654,6 +660,7 @@ nav .hamburger .bar {
     margin-bottom: 63.5px;
   }
   .childrens {
+    margin-bottom: 400px;
     flex-direction: column;
   }
   .childrens .book1 {
@@ -664,6 +671,85 @@ nav .hamburger .bar {
   }
   .childrens .book3 {
     margin-bottom: 63.5px;
+  }
+}
+@media (max-width: 390px) {
+  .book-img {
+    width: 150px !important;
+    height: 260px !important;
+  }
+  h1 {
+    margin-top: 310px !important;
+    position: relative;
+    bottom: 700px;
+  }
+  .first {
+    bottom: 300px !important;
+  }
+  .booksets {
+    margin-top: 500px;
+    margin-bottom: 800px;
+    flex-direction: column;
+  }
+  .booksets .book1 {
+    margin-left: 100px;
+    margin-bottom: 300px;
+  }
+  .booksets .book2 {
+    margin-left: 100px;
+    margin-bottom: 300px;
+  }
+  .booksets .book3 {
+    margin-left: 100px;
+    margin-bottom: 300px;
+  }
+  .black-history {
+    margin-bottom: 800px !important;
+    flex-direction: column;
+  }
+  .black-history .book1 {
+    margin-left: 100px;
+    margin-bottom: 300px;
+  }
+  .black-history .book2 {
+    margin-left: 100px;
+    margin-bottom: 300px;
+  }
+  .black-history .book3 {
+    margin-left: 100px;
+    margin-bottom: 300px;
+  }
+  .horror {
+    margin-bottom: 800px;
+    flex-direction: column;
+  }
+  .horror .book1 {
+    margin-left: 100px;
+    margin-bottom: 300px;
+  }
+  .horror .book2 {
+    margin-left: 100px;
+    margin-bottom: 300px;
+  }
+  .horror .book3 {
+    margin-left: 100px;
+    margin-bottom: 300px;
+  }
+  .childrens {
+    margin-bottom: 800px;
+    flex-direction: column;
+  }
+  .childrens .book1 {
+    margin-left: 100px;
+    margin-bottom: 300px;
+  }
+  .childrens .book2 {
+    margin-left: 100px;
+    margin-bottom: 300px;
+  }
+  .childrens .book3 {
+    margin-left: 100px;
+    margin-bottom: 300px;
   }
 }
 
