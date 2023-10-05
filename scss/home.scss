@@ -112,6 +112,9 @@
 
 
 @media (max-width:768px) {
+    .buy-button {
+            margin-bottom: 30px;
+        }
     .hero-text {
         h2 {
             font-size: 16px !important;
@@ -160,4 +163,23 @@
             height:70px;
         }
     }
+    .book-desc {
+        width:167px !important;
+    }
+    
+    .book-img-1{
+            height: 112px !important;
+            width:90px !important;
+            background-repeat: no-repeat;
+    }
+        .book-img-2 {
+            height: 112px !important;
+            width: 90px !important;
+            background-repeat: no-repeat;
+        }
+                .book-img-3 {
+                    height: 112px !important;
+                    width: 90px !important;
+                    background-repeat: no-repeat;
+                }
 }
