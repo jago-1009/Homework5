@@ -1,0 +1,291 @@
+.books-container {
+    .book-img {
+        margin-left: 53px;
+    }
+.book-price {
+    font-family: 'Segoe-UI';
+    margin-top:47px;
+    font-weight: bold;
+}
+.buy-button {
+    margin-top:62px;
+    width:222px;
+    height:68px;
+    background-color: white;
+}
+
+    .book-desc {
+            margin-left: 40px;
+    
+            .book-info {
+                max-width: 280px;
+                font-family: 'Segoe-UI';
+            }
+        }
+    width:100%;
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+flex-direction: column;
+h1 {
+    text-align: left;
+    margin-top:180px;
+    width:  90%;
+}
+.booksets {
+   width:90%;
+.book1  {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    .book-img {
+        width:223px;
+        height:246px;
+        background-image: url(../img/twilight-box-set.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
+.book2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    .book-img {
+        width: 224px;
+        height: 256px;
+        background-image: url(../img/hp-box-set.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
+
+.book3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    .book-img {
+        width: 217px;
+        height: 208px;
+        background-size: contain;
+        background-image: url(../img/got-box-set.jpg);
+        background-repeat: no-repeat;
+    }
+}
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height:660px;
+}
+.black-history {
+    h1 {
+            margin-bottom: 400px;
+        }
+                .book1 {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-evenly;
+        
+                    .book-img {
+                        width: 223px;
+                        height: 311px;
+                        background-image: url(../img/finding\ me.jpg);
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                    }
+                }
+        
+                .book2 {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-evenly;
+        
+                    .book-img {
+                        width: 224px;
+                        height: 311px;
+                        background-image: url(../img/mlk-biography.jpg);
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                    }
+                }
+        
+                .book3 {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-evenly;
+        
+                    .book-img {
+                        width: 208px;
+                        height: 311px;
+                        background-size: contain;
+                        background-image: url(../img/elenor-roosevelt-biography.jpg);
+                        background-repeat: no-repeat;
+                    }
+                }
+        
+                
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+   width:90%;    height: 729px;
+}
+.horror {
+    h1 {
+        margin-bottom: 400px;
+        }
+                 .book1 {
+                     display: flex;
+                     align-items: center;
+                     justify-content: space-evenly;
+        
+                     .book-img {
+                         width: 223px;
+                         height: 311px;
+                         background-image: url(../img/misery.jpg);
+                         background-size: contain;
+                         background-repeat: no-repeat;
+                     }
+                 }
+        
+                 .book2 {
+                     display: flex;
+                     align-items: center;
+                     justify-content: space-evenly;
+        
+                     .book-img {
+                         width: 224px;
+                         height: 311px;
+                         background-image: url(../img/frankenstein.jpg);
+                         background-size: contain;
+                         background-repeat: no-repeat;
+                     }
+                 }
+        
+                 .book3 {
+                     display: flex;
+                     align-items: center;
+                     justify-content: space-evenly;
+        
+                     .book-img {
+                         width: 208px;
+                         height: 311px;
+                         background-size: contain;
+                         background-image: url(../img/phantoms.jpg);
+                         background-repeat: no-repeat;
+                     }
+                 }
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+   width:90%;    height: 748px;
+}
+.childrens {
+    h1 {
+        margin-bottom: 400px;
+        }
+                 .book1 {
+                     display: flex;
+                     align-items: center;
+                     justify-content: space-evenly;
+        
+                     .book-img {
+                         width: 223px;
+                         height: 311px;
+                         background-image: url(../img/winnie\ the\ pooh.jpg);
+                         background-size: contain;
+                         background-repeat: no-repeat;
+                     }
+                 }
+        
+                 .book2 {
+                     display: flex;
+                     align-items: center;
+                     justify-content: space-evenly;
+        
+                     .book-img {
+                         width: 224px;
+                         height: 311px;
+                         background-image: url(../img/cat\ and\ the\ hat.jpg);
+                         background-size: contain;
+                         background-repeat: no-repeat;
+                     }
+                 }
+        
+                 .book3 {
+                     display: flex;
+                     align-items: center;
+                     justify-content: space-evenly;
+        
+                     .book-img {
+                         width: 208px;
+                         height: 311px;
+                         background-size: contain;
+                         background-image: url(../img/fun\ facts\ about\ space.jpg);
+                         background-repeat: no-repeat;
+                     }
+                 }
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+   width:90%;    height:646px;
+}
+}
+
+@media (max-width:768px) {
+    .booksets {
+        .book1 {
+            margin-bottom:63.5px;
+        }
+         .book2 {
+            margin-bottom:63.5px;
+        }
+         .book3 {
+            margin-bottom:63.5px;
+        }
+        flex-direction: column;
+    }
+    .black-history {
+        .book1 {
+                margin-bottom: 63.5px;
+            }
+        
+            .book2 {
+                margin-bottom: 63.5px;
+            }
+        
+            .book3 {
+                margin-bottom: 63.5px;
+            }
+            flex-direction: column;
+        }
+    .horror {
+        .book1 {
+                margin-bottom: 63.5px;
+            }
+        
+            .book2 {
+                margin-bottom: 63.5px;
+            }
+        
+            .book3 {
+                margin-bottom: 63.5px;
+            }
+        flex-direction: column;
+    }
+     .childrens {
+        .book1 {
+                margin-bottom: 63.5px;
+            }
+        
+            .book2 {
+                margin-bottom: 63.5px;
+            }
+        
+            .book3 {
+                margin-bottom: 63.5px;
+            }
+        flex-direction: column;
+    }
+}

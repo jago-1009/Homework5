@@ -13,11 +13,11 @@ function initListeners() {
     //   console.log(hashTag + ' ' + pageID);
     
     if (pageID != '') {
-    $.get(`pages/pageID/pageID.html`, function (data) {
+    $.get(`pages/${pageID}.html`, function (data) {
      $('#app').html(data);
     });
     } else {
-    $.get(`pages/home/home.html`, function (data) {
+    $.get(`pages/home.html`, function (data) {
      $('#app').html(data);
     });
     }
