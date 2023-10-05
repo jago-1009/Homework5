@@ -119,6 +119,7 @@ p {
 }
 }
 @media (max-width:390px) {
+    .about-container {
     .title  {
         font-size: 6px !important;
     }
@@ -129,12 +130,13 @@ p {
         width: 73px !important;
         height: 132px !important;
     }
+p {
+    width: 200px;
+    text-align: center;
+    font-size: 6px !important;
+    font-weight: bold;
 
-    p {
-        width: 200px ;
-        text-align: center;
-        font-size:6px !important;
-        font-weight: bold ;
-        
-    }
+}
+    
+}
 }

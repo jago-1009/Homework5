@@ -851,5 +851,42 @@ nav .hamburger .bar {
     margin-bottom: 300px;
   }
 }
+.account-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.account-container .login {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.account-container h1 {
+  text-align: left;
+  align-self: first baseline;
+  font-weight: normal;
+  font-family: "Segoe-UI";
+}
+.account-container p {
+  font-weight: normal;
+  align-self: first baseline;
+  font-family: "Segoe-UI";
+}
+.account-container input {
+  width: 253px;
+  margin-top: 45px;
+  border: none;
+  border-bottom: 2px solid #000000;
+}
+.account-container .password {
+  margin-bottom: 56px;
+}
+.account-container .signup {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
 
 /*# sourceMappingURL=styles.css.map */

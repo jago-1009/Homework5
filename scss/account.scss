@@ -1,0 +1,39 @@
+.account-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    .login {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        
+    }
+    h1 {
+        text-align: left;
+        align-self: first baseline;
+        font-weight: normal;
+        font-family: 'Segoe-UI';
+    }
+    p {
+        font-weight: normal;
+        align-self: first baseline;
+        font-family: 'Segoe-UI';
+    }
+   input {
+    width:253px;
+    margin-top: 45px;
+        border: none;
+        border-bottom: 2px solid $site-black
+   }
+    .password {
+
+        margin-bottom:56px;
+    }
+    .signup {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+}
