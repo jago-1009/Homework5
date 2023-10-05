@@ -1,6 +1,36 @@
+ let email = document.getElementsByClassName("email")
+let password = document.getElementsByClassName("password")
+let account = document.getElementById('account')
+  let userID;
+  let pass;
+
+  function logInInfo() {
+
+    userID = email[0].value
+    pass = password[0].value
+   LogIn(userID,pass)
+  }
+function LogIn(userID, pass) {
+    
+   if (userID != "" && pass != "") {
+
+    account.innerHTML = `<p>${userID}</p> <img src=\"img/user.png\" alt=\"User icon\">`;
+
+   }
+}
 
 
+function signUp() {
+    userID = email[1].value
+    pass=password[1].value
+    LogIn(userID,pass)
+}
 
+function logOut() {
+    userID=""
+        pass=""
+       account.innerHTML=`<p>Account</p> <img src=\"img/user.png\" alt=\"User icon\">`
+}
 
 
 
