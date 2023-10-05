@@ -1,0 +1,48 @@
+.blogPage {
+    max-width: $site-width;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 120px;
+
+    .blogs {
+        max-width: 1420px;
+        height: 460px;
+        background-color: $site-gray;
+        margin-bottom: 125px;
+
+        display:flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        .febImg {
+            width: 250px;
+            height: 380px;
+        }
+
+        .splashImg {
+            width: 622px;
+            height: 460px;
+        }
+
+        .blogText {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: "Segoe-UI";
+            h3 {
+                text-transform: uppercase;
+                color: white;
+                font-size: 28px;
+
+            }
+
+            p {
+                width: 40%;
+                text-align: center;
+                color: white;
+            }
+        }
+    }
+}
