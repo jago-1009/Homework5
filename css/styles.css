@@ -957,6 +957,7 @@ nav .hamburger .bar {
 }
 .blogPage {
   max-width: 1920px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -970,9 +971,15 @@ nav .hamburger .bar {
   margin-bottom: 125px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+.blogPage .blogs .febImages {
+  width: 60%;
+  display: flex;
+  align-items: center;
   justify-content: space-evenly;
 }
-.blogPage .blogs .febImg {
+.blogPage .blogs .febImages .febImg {
   width: 250px;
   height: 380px;
 }
@@ -981,20 +988,102 @@ nav .hamburger .bar {
   height: 460px;
 }
 .blogPage .blogs .blogText {
+  width: 40%;
   display: flex;
   flex-direction: column;
   align-items: center;
   font-family: "Segoe-UI";
+  margin-right: 40px;
 }
 .blogPage .blogs .blogText h3 {
   text-transform: uppercase;
   color: white;
   font-size: 28px;
+  margin-bottom: 50px;
 }
 .blogPage .blogs .blogText p {
-  width: 40%;
+  width: 60%;
   text-align: center;
   color: white;
+  font-weight: 200;
+  margin-left: 0;
+}
+.blogPage .blogs .blogText a {
+  width: 222px;
+  height: 70px;
+  color: #FFFFFF;
+  text-decoration: none;
+  text-align: center;
+  border: 1px solid #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .blogPage .blogs {
+    width: 66%;
+    height: 230px;
+  }
+  .blogPage .blogs .febImages .febImg {
+    width: 97px;
+    height: 146px;
+  }
+  .blogPage .blogs .splashImg {
+    width: 300px;
+    height: 230px;
+  }
+  .blogPage .blogs .blogText {
+    height: 230px;
+    margin-right: 10px;
+  }
+  .blogPage .blogs .blogText h3 {
+    font-size: 13px;
+    margin: 20px 0 10px 0;
+  }
+  .blogPage .blogs .blogText p {
+    font-size: 11px;
+    width: 90%;
+  }
+  .blogPage .blogs .blogText a {
+    width: 90px;
+    height: 34px;
+    margin: 0;
+  }
+}
+@media (max-width: 390px) {
+  .blogPage .blogs {
+    width: 318px;
+    height: 118px;
+  }
+  .blogPage .blogs .febImages .febImg {
+    width: 45px;
+    height: 70px;
+  }
+  .blogPage .blogs .splashImg {
+    width: 165px;
+    height: 118px;
+  }
+  .blogPage .blogs .blogText {
+    height: 118px;
+  }
+  .blogPage .blogs .blogText h3 {
+    font-size: 6px;
+    margin: 10px 0;
+  }
+  .blogPage .blogs .blogText p {
+    font-size: 6px !important;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .blogPage .blogs .blogText a {
+    font-size: 6px;
+    width: 80px;
+    height: 22px;
+    margin-bottom: 10px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
