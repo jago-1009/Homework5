@@ -1085,5 +1085,21 @@ nav .hamburger .bar {
     margin-bottom: 10px;
   }
 }
+.blogExpanded {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+.blogExpanded .blogHeader {
+  max-width: 1464px;
+  height: 463px;
+  margin: 0 auto;
+  background-color: #587C83;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.blogExpanded .febHero {
+  background-image: linear-gradient(to right, rgba(88, 124, 131, 0.1), rgba(88, 124, 131, 0.9));
+}
 
 /*# sourceMappingURL=styles.css.map */
