@@ -1,123 +1,133 @@
 * {
- margin: 0;
- padding: 0;
- box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-html, body {
- height: 100%
+html,
+body {
+  height: 100%;
 }
-h1, h2, h3, h4, h5, h6, p {
- margin-bottom: 16px
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
 }
-$site-white: #FFFFFF;
-$site-gray: #587C83;
+$site-white: #ffffff;
+$site-gray: #587c83;
 $site-black: #000000;
 
 $site-width: 1920px;
-$ipad-width:768px;
-$iphone-width:390px;
+$ipad-width: 768px;
+$iphone-width: 390px;
 
 @font-face {
-    font-family: 'Segoe-UI' ;
-    src: url(../img/fonts/segoeui.ttf);
+  font-family: "Segoe-UI";
+  src: url(../img/fonts/segoeui.ttf);
 }
-
 
 // Putting the footer here for simplicity
 footer {
-    max-width: $site-width;
-    margin: 100px auto 0 auto;
-    background-color: $site-gray;
-    padding: 0 100px;
-    height: 100px;
+  max-width: $site-width;
+  margin: 100px auto 0 auto;
+  background-color: $site-gray;
+  padding: 0 100px;
+  height: 100px;
 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .copy {
+    color: $site-white;
+    margin-bottom: 0;
+  }
+
+  .footerLinks {
+    width: 300px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 
-    .copy {
-        color: $site-white;
-        margin-bottom: 0;
+    a {
+      text-decoration: none;
+      color: $site-white;
     }
+  }
 
-    .footerLinks {
-        width: 300px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-
-        a {
-            text-decoration: none;
-            color: $site-white;
-        }
+  .socials {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    a {
+      img {
+        width: 45px;
+        height: 45px;
+      }
     }
-
-    .socials {
-        width: 200px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        a {
-            img {
-                width: 45px;
-                height: 45px;
-            }
-        }
-    }
+  }
 }
 
 @media (max-width: $ipad-width) {
-    footer {
-        padding: 0 20px;
-        margin: 60px auto 0 auto;
+  footer {
+    padding: 0 20px;
+    margin: 60px auto 0 auto;
 
-        .copy {
-            font-size: 11px;
-        }
-
-        .footerLinks {
-            width: 200px;
-            a {
-                font-size: 11px;
-            }
-        }
-
-        .socials {
-            width: 100px;
-
-            a {
-                img {
-                    width: 22px;
-                    height: 22px;
-                }
-            }
-        }
+    .copy {
+      font-size: 8px !important;
+      margin-left: 0;
+      width: 20%;
     }
+
+    .footerLinks {
+      width: 200px;
+      a {
+        font-size: 11px;
+      }
+    }
+
+    .socials {
+      width: 100px;
+
+      a {
+        img {
+          width: 22px;
+          height: 22px;
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: $iphone-width) {
-    footer {
-        height: 60px;
-        .copy {
-            font-size: 8px;
-        }
-
-        .footerLinks {
-            width: 100px;
-            a {
-                font-size: 8px;
-            }
-        }
-
-        .socials {
-            width: 60px;
-
-            a {
-                img {
-                    width: 14px;
-                    height: 14px;
-                }
-            }
-        }
+  footer {
+    height: 60px;
+    .copy {
+      width: 20%;
+      font-size: 6px !important;
+      margin-left: 0;
     }
+
+    .footerLinks {
+      width: 100px;
+      a {
+        font-size: 8px;
+      }
+    }
+
+    .socials {
+      width: 60px;
+
+      a {
+        img {
+          width: 14px;
+          height: 14px;
+        }
+      }
+    }
+  }
 }
