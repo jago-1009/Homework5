@@ -130,7 +130,7 @@ nav .logo p {
   margin-bottom: 0;
 }
 nav .search {
-  width: 600px;
+  width: 25%;
   height: 44px;
   background-color: #587c83;
   opacity: 0.35;
@@ -1069,9 +1069,13 @@ nav .hamburger .bar {
   }
 }
 @media (max-width: 390px) {
+  .blogPage {
+    margin-top: 30px;
+  }
   .blogPage .blogs {
     width: 318px;
     height: 118px;
+    margin-bottom: 50px;
   }
   .blogPage .blogs .febImages .febImg {
     width: 45px;
@@ -1124,12 +1128,20 @@ nav .hamburger .bar {
 }
 .blogExpanded .blogHeader h2 {
   font-size: 32px;
+  text-align: center;
 }
 .blogExpanded .blogHeader h3 {
   font-size: 22px;
+  text-align: center;
 }
 .blogExpanded .febHero {
   background-image: linear-gradient(rgba(88, 124, 131, 0.6), rgba(88, 124, 131, 0.6)), url(../img/february-favorites-hero.jpg);
+}
+.blogExpanded .bookclubHero {
+  background-image: linear-gradient(rgba(88, 124, 131, 0.6), rgba(88, 124, 131, 0.6)), url(../img/book-club-hero.jpg);
+}
+.blogExpanded .ereadHero {
+  background-image: linear-gradient(rgba(88, 124, 131, 0.6), rgba(88, 124, 131, 0.6)), url(../img/eread-hero.jpg);
 }
 .blogExpanded .blogRecommendation {
   max-width: 1920px;
@@ -1144,6 +1156,26 @@ nav .hamburger .bar {
 }
 .blogExpanded .blogRecommendation .recommendedText {
   width: calc(95% - 250px);
+}
+.blogExpanded .blogContent {
+  max-width: 1920px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.blogExpanded .blogContent img {
+  width: 60%;
+  height: 40%;
+  margin-right: 20px;
+}
+.blogExpanded .blogContent p {
+  font-size: 14px;
+  margin-bottom: 0;
+  text-align: left;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #587c83;
 }
 
 @media (max-width: 768px) {
@@ -1184,6 +1216,17 @@ nav .hamburger .bar {
     text-align: left;
     margin-left: 0;
   }
+  .blogExpanded .blogContent img {
+    width: 40%;
+    height: 30%;
+    margin-left: 0;
+  }
+  .blogExpanded .blogContent p {
+    height: 270px;
+    overflow-y: scroll;
+    font-weight: 100;
+    margin-left: 0;
+  }
 }
 @media (max-width: 390px) {
   .blogExpanded .blogHeader {
@@ -1212,6 +1255,10 @@ nav .hamburger .bar {
   }
   .blogExpanded .blogRecommendation .recommendedText p {
     font-size: 10px !important;
+  }
+  .blogExpanded .blogContent p {
+    font-size: 10px !important;
+    height: 200px;
   }
 }
 

@@ -23,10 +23,12 @@
 
     h2 {
       font-size: 32px;
+      text-align: center;
     }
 
     h3 {
       font-size: 22px;
+      text-align: center;
     }
   }
 
@@ -36,6 +38,22 @@
         rgba(88, 124, 131, 0.6)
       ),
       url(../img/february-favorites-hero.jpg);
+  }
+
+  .bookclubHero {
+    background-image: linear-gradient(
+        rgba(88, 124, 131, 0.6),
+        rgba(88, 124, 131, 0.6)
+      ),
+      url(../img/book-club-hero.jpg);
+  }
+
+  .ereadHero {
+    background-image: linear-gradient(
+        rgba(88, 124, 131, 0.6),
+        rgba(88, 124, 131, 0.6)
+      ),
+      url(../img/eread-hero.jpg);
   }
 
   .blogRecommendation {
@@ -54,6 +72,29 @@
       width: calc(95% - 250px);
     }
   }
+
+  .blogContent {
+    max-width: 1920px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+    img {
+      width: 60%;
+      height: 40%;
+      margin-right: 20px;
+    }
+
+    p {
+      font-size: 14px;
+      margin-bottom: 0;
+      text-align: left;
+    }
+  }
+}
+
+::-webkit-scrollbar-thumb {
+  background: $site-gray;
 }
 
 @media (max-width: $ipad-width) {
@@ -99,6 +140,20 @@
         }
       }
     }
+
+    .blogContent {
+      img {
+        width: 40%;
+        height: 30%;
+        margin-left: 0;
+      }
+      p {
+        height: 270px;
+        overflow-y: scroll;
+        font-weight: 100;
+        margin-left: 0;
+      }
+    }
   }
 }
 
@@ -134,6 +189,13 @@
         p {
           font-size: 10px !important;
         }
+      }
+    }
+
+    .blogContent {
+      p {
+        font-size: 10px !important;
+        height: 200px;
       }
     }
   }
