@@ -1,0 +1,81 @@
+.cartPage {
+    max-width: $site-width;
+    margin: 0 auto;
+
+    .cartItem {
+        width: 100%;
+        display: flex;
+        font-family: "Segoe-UI";
+        border-bottom: 2px solid black;
+        margin-bottom: 100px;
+        padding-bottom: 100px;
+        img {
+            width: 205px;
+            height: 317px;
+            margin-right: 20px;
+        }
+
+        .itemInfo {
+
+            h3 {
+                text-wrap: balance;
+            }
+            .itemPrice {
+                margin-bottom: 0;
+            }
+
+            .inStock {
+                margin-bottom: 40px;
+            }
+
+            a {
+                color: black;
+            }
+        }
+    }
+}
+
+@media (max-width: $ipad-width) {
+    .cartPage {
+        .cartItem {
+            img {
+                width: 140px;
+                height: 190px;
+            }
+            .itemInfo {
+                h3 {
+                    font-size: 16px;
+                }
+                p {
+                    font-size: 11px;
+                    margin-left: 0;
+                    text-align: left;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $iphone-width) {
+    .cartPage {
+        .cartItem {
+            margin-bottom: 40px;
+            padding-bottom: 40px;
+            img {
+                width: 120px;
+                height: 150px;
+                margin-right: 10px;
+            }
+
+            .itemInfo {
+                h3 {
+                    font-size: 12px;
+
+                }
+                p {
+                    font-size: 9px !important;
+                }
+            }
+        }
+    }
+}

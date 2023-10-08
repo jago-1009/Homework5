@@ -72,6 +72,12 @@ footer {
   }
 }
 
+@media (max-width: $site-width) {
+  nav, #app {
+    padding: 0 20px 0 20px;
+  }
+}
+
 @media (max-width: $ipad-width) {
   footer {
     padding: 0 20px;

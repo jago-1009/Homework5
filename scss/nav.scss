@@ -105,6 +105,10 @@ nav {
   nav {
     .logo {
       width: 30%;
+      p {
+        width: 100%;
+        text-align: left;
+      }
     }
     .search {
       width: 40%;

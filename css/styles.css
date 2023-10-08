@@ -58,6 +58,11 @@ footer .socials a img {
   height: 45px;
 }
 
+@media (max-width: 1920px) {
+  nav, #app {
+    padding: 0 20px 0 20px;
+  }
+}
 @media (max-width: 768px) {
   footer {
     padding: 0 20px;
@@ -199,6 +204,10 @@ nav .hamburger .bar {
 @media (max-width: 768px) {
   nav .logo {
     width: 30%;
+  }
+  nav .logo p {
+    width: 100%;
+    text-align: left;
   }
   nav .search {
     width: 40%;
@@ -1259,6 +1268,67 @@ nav .hamburger .bar {
   .blogExpanded .blogContent p {
     font-size: 10px !important;
     height: 200px;
+  }
+}
+.cartPage {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+.cartPage .cartItem {
+  width: 100%;
+  display: flex;
+  font-family: "Segoe-UI";
+  border-bottom: 2px solid black;
+  margin-bottom: 100px;
+  padding-bottom: 100px;
+}
+.cartPage .cartItem img {
+  width: 205px;
+  height: 317px;
+  margin-right: 20px;
+}
+.cartPage .cartItem .itemInfo h3 {
+  text-wrap: balance;
+}
+.cartPage .cartItem .itemInfo .itemPrice {
+  margin-bottom: 0;
+}
+.cartPage .cartItem .itemInfo .inStock {
+  margin-bottom: 40px;
+}
+.cartPage .cartItem .itemInfo a {
+  color: black;
+}
+
+@media (max-width: 768px) {
+  .cartPage .cartItem img {
+    width: 140px;
+    height: 190px;
+  }
+  .cartPage .cartItem .itemInfo h3 {
+    font-size: 16px;
+  }
+  .cartPage .cartItem .itemInfo p {
+    font-size: 11px;
+    margin-left: 0;
+    text-align: left;
+  }
+}
+@media (max-width: 390px) {
+  .cartPage .cartItem {
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+  }
+  .cartPage .cartItem img {
+    width: 120px;
+    height: 150px;
+    margin-right: 10px;
+  }
+  .cartPage .cartItem .itemInfo h3 {
+    font-size: 12px;
+  }
+  .cartPage .cartItem .itemInfo p {
+    font-size: 9px !important;
   }
 }
 
